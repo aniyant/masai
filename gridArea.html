@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Grid Area Swapping
+        </title>
+        <style>
+            div#grid{
+                width: 50%;
+                height: 50vh;
+                display: grid;
+                gap: 10px;
+                background-color: yellow;
+                grid-template-column3s: repeat(3,1fr);
+                grid-template-areas: "a1 a2 a3"
+                                    "a4 a5 a6";
+            }
+            div>div{
+                display: grid;
+                border:2px solid black;
+            }
+            
+ 
+        </style>
+    </head>
+    <body>
+        <div id="grid">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </body>
+</html>

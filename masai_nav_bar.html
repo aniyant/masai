@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Nav Bar</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        nav{
+            width: 100%;
+            height: auto;
+            padding: 15px;
+            border: 1px ridge;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav>div:nth-child(2){
+            display: flex;
+            gap:20px;
+        }
+        button{
+            margin:0px 5px 0px 5px;
+        }
+        .refer{
+            width: fit-content;
+            padding: 15px 10px 15px 10px;
+            border: 1px ridge;
+            border-radius: 5px;
+            color:black;
+            background-color: #e5feff
+        }
+        .sign{
+            width: max-content;
+            padding: 15px 10px 15px 10px;
+            border: 1px ridge red;
+            border-radius: 5px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/logo.png" alt="">
+        </div>
+        <div>
+            <span>COURSES</span>
+            <span>FEES</span>
+            <span>EVENTS</span>
+            <span>LEARN</span>
+            <span>SUCCESS STORIES</span>
+            <span>HIRE FROM US</span>
+        </div>
+        <div>
+            <button class="refer">REFER & EARN</button>
+            <button class="sign">SIGN UP</button>
+        </div>
+    </nav>
+</body>
+</html>

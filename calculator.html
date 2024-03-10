@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #button {
+        width:300px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: auto;
+        gap: 10px;
+        padding: 50px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      #button > div {
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      #button > div:nth-child(1) {
+        grid-area: 1/1/1/5;
+      }
+      #container > h1 {
+        text-align: center;
+        font-size: 50px;
+        color: #008080;
+      }
+      #button div.operator {
+        background-color: black;
+        color: white;
+      }
+      #button div.reset {
+        background-color: red;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Masai Calculator</h1>
+      <div id="button">
+        <div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div class="operator">+</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div class="operator">-</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div class="operator">x</div>
+        <div class="reset">C</div>
+        <div>0</div>
+        <div class="operator">=</div>
+        <div class="operator">/</div>
+      </div>
+    </div>
+  </body>
+</html>

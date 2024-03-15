@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Grid</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        #container{
+            width: 100%;
+            height: 50vh;
+            display: grid;
+            /* grid-template-columns: repeat(2,1fr); */
+            grid-template-areas:'logo links'
+                                'footer footer';
+        }
+        #container>div:nth-child(1){
+            background-color:#6e71cc;
+            grid-area: "logo";
+        }
+        #container>div:nth-child(2){
+            background-color:#3140af;
+            grid-area: "links";
+        }
+        #container>div:nth-child(3){
+            background-color:#222222;
+            grid-area: "footer";
+            grid-column: span 2; 
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="logo">
+            <div>1</div>
+        </div>
+        <div id="links">2</div>
+        <div id="footer">3</div>
+    </div>
+</body>
+</html>

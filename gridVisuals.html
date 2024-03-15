@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 60%;
+            height: 50vh;
+            display: grid;
+            border: 2px ridge red;
+            border-radius: 10px;
+            gap:10px;
+            grid-template-areas: "a1 a1 a2 a2 a3 a3"
+                                 "a4 . . a5 a6 a6"
+                                 "a7 a7 a7 a5 . .";
+        }
+        #container>div:nth-child(1) {
+            border-radius: 5px;
+            background-color: #636940;
+            grid-area: a1;
+        }
+        #container>div:nth-child(2){
+            background-color: #636940;
+            grid-area: a2;
+        }
+        #container>div:nth-child(3){
+            background-color: #636940;
+            grid-area: a3;
+        }
+        #container>div:nth-child(4){
+            background-color: #636940;
+            grid-area: a4;
+        }
+        #container>div:nth-child(5){
+            background-color: #636940;
+            grid-area: a5;
+        }
+        #container>div:nth-child(6){
+            background-color: #636940;
+            grid-area: a6;
+        }
+        #container>div:nth-child(7){
+            background-color: #636940;
+            grid-area: a7;
+        }
+        /* #container>div:nth-child(8){
+            width: 100px;
+            height: 100px;
+            margin:20px;
+            background-color: #636940;
+            grid-area: a8;
+        }
+        #container>div:nth-child(9){
+            width: 100px;
+            height: 100px;
+            margin:20px;
+            background-color: #636940;
+            grid-area: a9;
+        } */
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

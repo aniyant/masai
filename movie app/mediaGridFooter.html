@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Footer Layout</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        h5,a,span{
+            color:white;
+        }
+        h5 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-areas: "logo links links"
+                                 "foot foot foot";
+        }
+        footer>div:nth-child(1){
+            padding: 30px;
+            background-color: #02026f;
+            grid-area:logo;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer>div:nth-child(2){
+            padding: 30px;
+            background-color: #3140af;
+            grid-area:links;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        footer>div:nth-child(3){
+            width: 100%;
+            height: auto;
+            padding: 30px;
+            box-sizing: border-box;
+            background-color: #222222;
+            grid-area: foot;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer>div:nth-child(2) span{
+            font-size: 16px;
+            width: 100%;
+            height: 30px;
+            display: block;
+            text-decoration: none;
+        }
+        #links a{
+            text-decoration: none;
+        }
+        ul>li::marker{
+            content:none;
+        }
+        #foot span{
+            padding: 10px;
+        }
+        @media (min-width:768px) and (max-width:1024px) {
+            footer{
+                grid-template-areas: "links"
+                                    "logo"
+                                    "foot";
+            }
+            footer div#lang-region{
+                display:none;
+            }
+        }
+        @media (max-width:768px) {
+            footer{
+                grid-template-areas: "foot"
+                                    "links"
+                                    "logo";
+            }
+            footer div#lang-region{
+                display: none;
+            }
+            footer>div:nth-child(3){
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div id="logo">
+            <img src="https://yt3.googleusercontent.com/rdtdzeTQtjoPQiYuyIaNwulo-DD_72PcKSHyDRTANQMhg5_h8W8ig1PRJZBBY5mcBs81sUWcqQ=s176-c-k-c0x00ffffff-no-rj" alt="">
+        </div>
+        <div id="links">
+            <div>
+                <h5>Shop</h5>
+                <div class="links-list">
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                </div>
+            </div>
+            <div>
+                <h5>Sell</h5>
+                <div class="links-list">
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                </div>
+            </div>
+            <div>
+                <h5>About</h5>
+                <div class="links-list">
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                </div>
+            </div>
+            <div>
+                <h5>Shop</h5>
+                <div class="links-list">
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                <span><a href="#">cards</a></span>
+                </div>
+            </div>
+        </div>
+        <div id="foot">
+            <div id="lang-region">
+                <img src="" alt="">
+                <span>India</span>
+                <span>|</span>
+                <span>English</span>
+                <span>|</span>
+                <span>INR</span>
+            </div>
+            <div id="copyright">
+                <span>2024 Etsy co.</span>
+                <span><a href="">Terms of Use</a></span>
+                <span><a href="">Privacy</a></span>
+                <span><a href="">Interest based ads</a></span>
+                <span><a href="">Local Shops</a></span>
+                <span><a href="">Regions</a></span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

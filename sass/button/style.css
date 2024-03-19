@@ -1,0 +1,21 @@
+button.primary {
+  border: #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+button.secondary {
+  border: #ccc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #007bff;
+  color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
